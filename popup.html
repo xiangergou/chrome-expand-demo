@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Getting Started Extension's Popup</title>
+</head>
+	<style>
+		.container{
+			width: 330px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+		.container h1{
+			font-size: 16px;
+			margin-left: 10px;
+		}
+		.container ul{
+			list-style: none;
+		}
+		.container ul li{
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+			display: flex;
+			margin: 10px;
+		}
+		.container ul li label{
+			display: inline-block;
+			float: left;
+			flex: 1;
+		}
+		.container ul li span{
+			flex: 4;
+			display: inline-block;
+		}
+		.container p{
+			float: right;
+		}
+	
+	</style>	
+<body>
+	<div class="container">
+		<h1>历史上的今天:</h1>
+		<ul id="itemList">
+		</ul>
+		<p>auth: ergou_xiang</p>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>
